@@ -29,8 +29,8 @@ const deleteRole = catchAsync(async (req, res) => {
 const getRole = catchAsync(async (req, res) => {
   const admin = req.user.dataValues;
 
-  const deleteData = await Role.findAll({ where: { adminId: admin.id } });
-  res.status(httpStatus.CREATED).json({ success: true, data: deleteData, message: 'Role deleted' });
+  const getRole = await Role.findAll({ where: { adminId: admin.id } });
+  res.status(httpStatus.CREATED).json({ success: true, data: getRole });
 });
 
 module.exports = {
