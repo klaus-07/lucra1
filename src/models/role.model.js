@@ -12,9 +12,9 @@ const Roles = sequelize.define('Role', {
   roleName: {
     type: DataTypes.STRING,
   },
-  adminId: {
-    type: DataTypes.INTEGER,
-  },
+  // adminId: {
+  //   type: DataTypes.INTEGER,
+  // },
   permission: {
     type: DataTypes.JSON, // Use JSON data type to store array-like data
     allowNull: true,
