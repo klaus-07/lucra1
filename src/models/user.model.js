@@ -67,9 +67,9 @@ const User = sequelize.define('Users', {
   link: {
     type: DataTypes.STRING,
   },
-  // roleId: {
-  //   type: DataTypes.STRING,
-  // },
+  roleIds: {
+    type: DataTypes.STRING,
+  },
   account: {
     type: DataTypes.JSON,
   },
