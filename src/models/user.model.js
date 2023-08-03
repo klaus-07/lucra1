@@ -84,8 +84,8 @@ sequelize
     console.error('Unable to create table : ', error);
   });
 
-// Roles.hasMany(User);
-// User.belongsTo(Roles);
+Roles.hasMany(User);
+User.belongsTo(Roles);
 
 // User.hashMany(Roles);
 // Campaign.associate = (models) => {
