@@ -67,7 +67,7 @@ const User = sequelize.define('Users', {
   link: {
     type: DataTypes.STRING,
   },
-  roleIds: {
+  roleId: {
     type: DataTypes.STRING,
   },
   account: {
@@ -84,8 +84,8 @@ sequelize
     console.error('Unable to create table : ', error);
   });
 
-Roles.hasMany(User);
-User.belongsTo(Roles);
+// Roles.hasMany(User);
+// User.belongsTo(Roles);
 
 // User.hashMany(Roles);
 // Campaign.associate = (models) => {
