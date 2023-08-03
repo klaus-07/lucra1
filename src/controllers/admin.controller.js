@@ -183,7 +183,7 @@ const editUser = catchAsync(async (req, res) => {
     surname,
     email,
     phoneNumber,
-    roleId: roleId == undefined ? '' : roleId,
+    // roleId,
     avatar: req.file ? `http://localhost:3000/${req.file.filename}` : req.body.avatar,
   };
   const updateData = await User.update(updateObj, { where: { id: id }, returning: true });
